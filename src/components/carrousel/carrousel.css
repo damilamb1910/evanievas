@@ -1,0 +1,13 @@
+.carrousel{
+    width: 600px;
+}
+
+@media only screen and  (max-width:600px) {
+    
+.carrousel__img{
+    max-width: 100vh !important;
+    width: 100vw;
+}
+    
+    
+}

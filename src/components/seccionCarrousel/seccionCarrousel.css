@@ -1,0 +1,24 @@
+.seccion__carrouesel__container{
+    display:flex ;
+    flex-direction: row;
+    justify-content: center;
+   width: 100%;
+   padding-bottom: 100px;
+    padding-top: 100px;
+    background-color: #182272;
+}
+
+.seccion__carrousel__column{
+width: 500px;
+}
+
+.carrousel{
+    width: 600px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.d-block{
+    cursor: pointer;
+   
+}

@@ -1,0 +1,148 @@
+.logo{
+    width: 70px;
+}
+
+a{
+  text-decoration: none !important;
+}
+
+.menu-boton{
+    display: none;
+    margin-right: 1em;
+    color: #8448D8;
+   
+  }
+  .nav__ul{
+    display: flex;
+    flex-flow: row nowrap !important;
+    justify-content: flex-end;
+    align-items: center;
+}
+.nav__item{
+  list-style: none;
+    margin:0 .5em;
+    color: #FFFFFF;
+    padding: .5em 1em;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Pangolin', cursive;
+}
+header {
+    
+    flex-flow: row wrap !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+    position: fixed;
+    z-index: 4;
+    height: 80px;
+    width: 100%;
+    background-color: rgb(14,24,121,0.8);
+    
+ }
+
+.dropdown li{
+  border: solid 1px ;
+  border-radius: 20px;
+  padding: 5px;
+  color: #FFFFFF !important;
+}
+
+ .dropdown{
+  display: none;
+  position: absolute !important;
+  width: 250px;
+  top: 30px;
+  right: -60px;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+ 
+  
+      
+ }
+ .dropdown.isActive{
+display: flex ;
+ }
+
+ .dropdown li:hover{
+  padding-left: 20px;
+  transition: all 0.5s ease-in-out;
+  
+  color: #8448D8 !important;
+  background-color: #1D1D1D;
+  background: #1D1D1D;
+box-shadow: inset 20px 20px 60px #0d0d0d,
+            inset -20px -20px 60px #2d2d2d;
+            
+ }
+
+
+ @media only screen and  (max-width:850px) {
+  
+  .dropdown li{
+    padding-left: 20px;
+  transition: all 1s ease-in-out;
+  
+  color: white !important;
+  background-color: #1D1D1D;
+  background: #1D1D1D;
+box-shadow: inset 20px 20px 60px #0d0d0d,
+            inset -20px -20px 60px #2d2d2d;
+  }
+
+   
+       
+}
+
+
+ @media only screen and  (max-width:600px) {
+    .menu-boton{
+        display:flex;
+      }
+      header{
+        position: fixed;
+      z-index: 9999;
+      background-color: #1D1D1D;
+      }
+    .header__nav{
+        width: 100%;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      height: 0vh;
+      overflow: hidden;
+      opacity: 0;
+      transition: all .5s ease;
+      background-color: #1D1D1D;
+     
+      
+      
+      
+      
+    }
+    .header__nav.isActive{
+      font-size: 18px;
+        height: 90vh;
+        opacity: 1;
+        position: relative;
+      z-index: 9999;
+
+        
+      }
+
+      .nav__ul{
+        flex-direction: column !important;
+      background-color: #1D1D1D;
+      margin-top: 0px;
+      padding-left: 0;
+      
+      
+      }
+      
+         
+ }

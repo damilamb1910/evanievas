@@ -1,0 +1,88 @@
+.landing{
+    height: 100vh;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./../assets/eva_back.png');
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.text__contain{
+ height: 10%;
+ color: antiquewhite;
+ text-shadow: 2px 2px 2px black;
+ margin-top: 300px;
+}
+
+.text__contain h2{
+    margin-bottom: 20px;
+    
+   }
+
+
+   
+
+   .boton__home{
+    border: 0;
+    background-image: linear-gradient(150deg, #433DF2, #AEA3D9,  #ECF23D);
+    border-radius: 8px;
+    padding: 5px ;
+    font-size: 18px;
+    
+    transition: 3s;
+    display: flex;
+   }
+
+   button span{
+    background-color: black;
+    padding: 4px  190px;
+    border-radius: 8px;
+    color: aliceblue;
+    transition: .3s;
+    cursor: pointer;
+   }
+
+   .boton__home:hover span{
+    
+    background: none;
+    
+   }
+
+   .boton__home:active{
+    
+    transform: scale(2);
+    
+   }
+
+   .landing__image{
+    height: 500px;
+    filter: drop-shadow(10px 5px 2px);
+   }
+
+   .frase__container{
+    background-image: url('../assets/texturas2.jpg');
+    
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    
+    background-attachment: fixed ;
+    width: 100%;
+    height: 600px;
+    
+   }
+   
+   .frase__container h3{
+    color: white;
+    font-size: 30px;
+    text-shadow: 1px 1px 20px  black, 1px 1px 20px  black,1px 1px 20px  black;
+    font-family: 'Pangolin', cursive;
+   }
+   
