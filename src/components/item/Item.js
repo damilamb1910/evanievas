@@ -1,11 +1,14 @@
 import React from 'react'
 import './item.css'
 
-const Item = () => {
+const Item = ({producto}) => {
   return (
     <div className='item__container'>
-        <img src={require('../../assets/eva_back.png')} alt="" />
-        <h4>Titulo</h4>
+      <div className='item__image__container'>
+      <img src={producto.img} alt="" />
+      </div>
+        
+        <h4>"{producto.titulo}"</h4>
       
     </div>
   )

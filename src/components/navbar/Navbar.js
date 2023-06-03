@@ -66,8 +66,8 @@ const cambiar=()=>{
                 ):(
                     <ul  className="nav__ul">
                 <Link to={"/acerca"}><li className="nav__item">Acerca de mi</li></Link>
-                <Link to={'/productos'} ><li className="nav__item">Pinturas</li></Link> 
-                <Link to={'/productos'}><li className="nav__item">Artesanias</li></Link>
+                <Link to={'/productos/pinturas'} ><li className="nav__item">Pinturas</li></Link> 
+                <Link to={'/productos/artesanias'}><li className="nav__item">Artesanias</li></Link>
                 
            </ul>
     )}

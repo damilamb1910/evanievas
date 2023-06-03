@@ -5,18 +5,13 @@ import './loading.css'
 
 
 const Loading = ({loading}) => {
-    const[display,setDisplay]=useState(true)
+    
 
-useEffect(()=>{
-
-setDisplay(loading)
-
-},[loading])
 
     
 
   return (
-    <div className={display ? 'loading__container' :'displaynone'}>
+    <div className={loading ? 'loading__container' :'displaynone'}>
         <img  src={require('../../assets/logo-eva.gif')} alt="" />
      
     </div>
