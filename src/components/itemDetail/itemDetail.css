@@ -1,0 +1,40 @@
+.itemDetail__info__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+    margin-bottom: 100px;
+    
+    
+
+}
+
+.itemDetail__info__container h6{
+    width: 50%;
+    margin-right: 50px;
+
+}
+
+.itemDetail__info__container img{
+    width: 50%;
+    
+
+}
+
+.itemDetail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.itemDetail h3{
+    color: #7ADBE6;
+    font-size: 70px;
+    font-family: 'Pangolin', cursive;
+    text-transform: uppercase;
+    
+    text-align: center;
+    margin-bottom: 100px;
+}

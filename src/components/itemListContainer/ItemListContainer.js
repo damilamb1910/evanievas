@@ -13,8 +13,10 @@ const [loading,setLoading]=useState(true)
 const {categoriaId}=useParams()
 
   useEffect(()=>{
+    window.scrollTo(0, 0);
 
     setLoading(true)
+    
         const prodCollection=collection(db,'productos')
     
          if(categoriaId){
@@ -22,13 +24,19 @@ const {categoriaId}=useParams()
             const q=query(prodCollection,where('categoria','==',categoriaId))
             getDocs(q)
         .then(data => setListProductos(data.docs.map(product=>
-             ({...product.data(),id:product.id})))).finally(()=>{setLoading(false)})
+             ({...product.data(),id:product.id}))))
         }else{
         
         getDocs(prodCollection)
         .then(data => setListProductos(data.docs.map(product=>
-             ({...product.data(),id:product.id})))).finally(()=>{setLoading(false)})
+             ({...product.data(),id:product.id}))))
         }
+        const timer = setTimeout(() => {
+          setLoading(false);
+        }, 3000);
+    
+        
+        return () => clearTimeout(timer);
         },[categoriaId])
         
   return (

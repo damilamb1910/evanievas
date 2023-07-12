@@ -5,7 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url('./../assets/eva_back.png');
+    background-image: url('../../assets/eva_back.png');
     
     background-size: cover;
     background-repeat: no-repeat;
@@ -65,7 +65,7 @@
    }
 
    .frase__container{
-    background-image: url('../assets/texturas2.jpg');
+    background-image: url('../../assets/texturas2.jpg');
     
     display: flex;
     background-repeat: no-repeat;
