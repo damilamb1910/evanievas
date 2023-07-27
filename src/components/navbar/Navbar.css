@@ -79,7 +79,8 @@ box-shadow: inset 20px 20px 60px #0d0d0d,
             inset -20px -20px 60px #2d2d2d;
             
  }
-
+ 
+ 
 
  @media only screen and  (max-width:850px) {
   
@@ -99,7 +100,7 @@ box-shadow: inset 20px 20px 60px #0d0d0d,
 }
 
 
- @media only screen and  (max-width:600px) {
+ @media only screen and  (max-width:770px) {
     .menu-boton{
         display:flex;
       }

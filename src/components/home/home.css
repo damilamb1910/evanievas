@@ -85,4 +85,34 @@
     text-shadow: 1px 1px 20px  black, 1px 1px 20px  black,1px 1px 20px  black;
     font-family: 'Pangolin', cursive;
    }
+
+   @media only screen and  (max-width:900px) {
+    .landing__image{
+        height: 400px;
+        
+       }
+    
+    }
+
+    @media only screen and  (max-width:770px) {
+        .landing__image{
+            height: 200px;
+            width: max-content;
+            
+            
+           }
+        .landing{
+            align-items: center;
+        }
+           button span{
+            
+            padding: 4px  100px;
+            
+            
+           }
+           .frase__container h3{
+            margin-left: 5px;
+            margin-right: 5px;
+           }
+        }
    

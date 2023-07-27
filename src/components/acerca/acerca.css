@@ -142,3 +142,23 @@
         }
     
   
+        @media only screen and  (max-width:770px) {
+          .acerca__div{
+            
+            flex-direction: column-reverse;
+            margin-left: 5px;
+  margin-right: 5px;
+  
+           }
+           .acerca__div p{
+            width: 90%;
+            overflow: hidden;
+            height: 500px;
+            margin-right: 0px;
+          }
+          .ilustration{
+            display: block;
+            width: 90%;
+            height: 300px;
+          }   
+       }

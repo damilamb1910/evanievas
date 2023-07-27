@@ -5,8 +5,13 @@ import Loading from '../loading/Loading'
 import './itemDetail.css'
 
 const ItemDetail = ({producto}) => {
+  const [localWidth,setLocalWidth]=useState(window.innerWidth)
   const [loading,setLoading]=useState(true)
+  const cambiarWidth=()=>{
+    setLocalWidth(window.innerWidth)
+  }
   useEffect(() => {
+    window.addEventListener("resize", cambiarWidth)
     window.scrollTo(0, 0);
     const timer = setTimeout(() => {
       setLoading(false);
@@ -26,7 +31,7 @@ const ItemDetail = ({producto}) => {
       
      
      
-     { producto.categoria  && <Carrousel widht={producto.widht} height={producto.height} video={producto.video} images={producto.imagenes}/> }
+     { producto.categoria   &&    (  localWidth > 1000 ? (<Carrousel widht={producto.widht} height={producto.height} video={producto.video} images={producto.imagenes}/>)  : (<Carrousel widht={localWidth - 200} height={100} video={producto.video} images={producto.imagenes}/>) )    }
    
 
 
